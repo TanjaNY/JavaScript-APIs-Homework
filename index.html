@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aliens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group"></div>
+          <label for="exampleSelect1">What criteria you want to search in?</label>
+           <select class="form-control" id="searchterm">
+            <option>date/time</option>
+            <option>city</option>
+            <option>state</option>
+            <option>country</option>
+            <option>shape</option> 
+            <option>durationMinutes</option>
+          </select>
+        </div> 
+      </div>
+    </div>
+<div class="row">
+<div class="col-md-4">
+  <div class="form-group">
+          <input type="text" class="form-control" id="criteria" placeholder="type your search criteria here">
+          <a id="search" class="btn btn-default">Search</a>
+          <div class="form-group"></div>
+        </div>
+    </div>       
+  <div class="col-md-4">
+<div class="form-group">
+        <input type="text" class="form-control" id="datetime" placeholder="Date">
+        <a id="search" class="btn btn-default">Search by date</a>
+        <div class="form-group"></div>
+   </div>
+  </div>
+ </div>
+</div>
+     <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th> date/time</th>
+              <th>city</th>
+              <th>state</th>
+              <th>country</th>
+              <th>shape</th>              
+              <th>durationMinutes</th> 
+              <th>comments</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="dataset.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
